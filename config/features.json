@@ -1,0 +1,41 @@
+{
+  "theme": {
+    "default": "dark",
+    "allowToggle": true,
+    "respectSystemPreference": true
+  },
+  "animations": {
+    "scrollReveal": true,
+    "heroTyping": true,
+    "cursorGlow": true,
+    "reducedMotionFallback": true
+  },
+  "sections": {
+    "hero": true,
+    "about": true,
+    "skills": true,
+    "experience": true,
+    "projects": true,
+    "contact": true,
+    "blog": false,
+    "chatbot": false
+  },
+  "i18n": {
+    "enabled": false,
+    "default": "en",
+    "supported": ["en"]
+  },
+  "email": {
+    "provider": "formspree",
+    "endpoint": "https://formspree.io/f/REPLACE_WITH_YOUR_ID",
+    "fallbackMailto": "saran1191997@gmail.com",
+    "honeypotField": "website",
+    "successMessage": "Thanks — I'll get back to you within 24 hours.",
+    "errorMessage": "Something went wrong. Please try again or email me directly."
+  },
+  "analytics": {
+    "enabled": false,
+    "provider": "plausible",
+    "domain": ""
+  }
+}

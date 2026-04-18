@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0f17" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <title>Saravana Kumar B — DevSecOps Engineer</title>
+  <meta name="description" content="DevSecOps Engineer building secure, automated cloud platforms — AWS, Terraform, Kubernetes, Python, LLM-powered automation." />
+  <meta name="author" content="Saravana Kumar B" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Saravana Kumar B — DevSecOps Engineer" />
+  <meta property="og:description" content="Securing pipelines. Shipping at cloud speed." />
+  <meta property="og:image" content="assets/og-image.svg" />
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="styles/main.css?v=4" />
+
+  <!-- Theme bootstrap (avoids flash of unthemed content) -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Animated background canvas -->
+  <div class="bg-aurora" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="orb orb-4"></span>
+  </div>
+  <div class="bg-noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Navbar (rendered by JS) -->
+  <header id="navbar" class="navbar" role="banner"></header>
+
+  <!-- Mobile drawer backdrop + drawer mount — MUST be outside navbar
+       (navbar uses transform which would trap position:fixed children) -->
+  <div id="nav-backdrop" class="nav-backdrop" aria-hidden="true"></div>
+  <div id="nav-drawer-root"></div>
+
+  <main id="main">
+    <section id="hero" class="section section-hero" data-section></section>
+    <section id="about" class="section" data-section></section>
+    <section id="skills" class="section" data-section></section>
+    <section id="experience" class="section" data-section></section>
+    <section id="projects" class="section" data-section></section>
+    <section id="contact" class="section" data-section></section>
+  </main>
+
+  <footer id="footer" class="footer" role="contentinfo"></footer>
+
+  <!-- Toast container for email feedback -->
+  <div id="toast-root" class="toast-root" aria-live="polite" aria-atomic="true"></div>
+
+  <script type="module" src="main.js?v=4"></script>
+</body>
+</html>

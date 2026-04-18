@@ -1,0 +1,86 @@
+{
+  "github": {
+    "user": "SaRan111997",
+    "enabled": true,
+    "section": "more",
+    "_comment": "Names below are fetched live from GitHub API. Add/remove repo names freely. Set enabled=false to skip GitHub entirely.",
+    "allowlist": [
+      "Portfolio",
+      "ippo-terraform",
+      "Railway_Parking",
+      "pythonchatGPT-openapi",
+      "cosmosdb-with-fastapi",
+      "Python-CertificateGenerator",
+      "Python-Password-Generator",
+      "reactjs-task-ippopay"
+    ]
+  },
+  "featured": [
+    {
+      "title": "LLM-Powered DevSecOps Assistant",
+      "summary": "An AI assistant that reviews IaC pull requests, flags security drift, and auto-suggests Terraform fixes via OpenAI.",
+      "description": "Integrates with GitHub Actions to scan Terraform plans, runs policy checks, and posts inline review comments. Cuts manual review time on standard infra changes by ~60%.",
+      "tech": ["Python", "OpenAI", "Terraform", "GitHub Actions", "AWS"],
+      "tags": ["AI", "DevSecOps", "Automation"],
+      "github": "https://github.com/SaRan111997",
+      "demo": null,
+      "image": "assets/projects/llm-devsecops.svg",
+      "year": 2025,
+      "status": "active"
+    },
+    {
+      "title": "Secure AWS Landing Zone (Terraform)",
+      "summary": "Multi-account AWS baseline with guardrails, centralised logging, and least-privilege IAM — provisioned via reusable Terraform modules.",
+      "description": "Implements CIS-aligned controls, SCPs, GuardDuty, and a logging account pattern. Ships as a module library so new environments boot in under an hour.",
+      "tech": ["Terraform", "AWS", "IAM", "GuardDuty"],
+      "tags": ["IaC", "Cloud Security"],
+      "github": "https://github.com/SaRan111997",
+      "demo": null,
+      "image": "assets/projects/landing-zone.svg",
+      "year": 2024,
+      "status": "active"
+    },
+    {
+      "title": "Container Hardening Pipeline",
+      "summary": "Jenkins + Trivy + Cosign pipeline that builds, scans, signs, and promotes container images across environments.",
+      "description": "Stops vulnerable images at build time, signs verified artefacts, and enforces admission policies in Kubernetes via Kyverno.",
+      "tech": ["Docker", "Jenkins", "Trivy", "Cosign", "Kubernetes"],
+      "tags": ["DevSecOps", "Containers"],
+      "github": "https://github.com/SaRan111997",
+      "demo": null,
+      "image": "assets/projects/container-pipeline.svg",
+      "year": 2024,
+      "status": "active"
+    },
+    {
+      "title": "HackTheBox Profile",
+      "summary": "Active CTF practice — hands-on penetration testing across web, network, and Active Directory paths.",
+      "description": "Continuous offensive-security practice to keep blue-team intuition sharp. Focused on chained web exploits and AD enumeration.",
+      "tech": ["Burp Suite", "nmap", "Metasploit", "Bash"],
+      "tags": ["Security", "CTF"],
+      "github": null,
+      "demo": "https://app.hackthebox.eu/profile/383350",
+      "image": "assets/projects/htb.svg",
+      "year": 2023,
+      "status": "ongoing"
+    }
+  ],
+  "more": [
+    {
+      "title": "BehindO — Tamil Tech Tutorials",
+      "summary": "Android app delivering tech education in Tamil, distributed via the Play Store.",
+      "tech": ["Android", "Java"],
+      "tags": ["Mobile", "Education"],
+      "github": "https://github.com/SaRan111997",
+      "demo": null
+    },
+    {
+      "title": "Think Different — Tech Blog",
+      "summary": "Long-running blog covering Windows/Linux/Android tips and deep-dives.",
+      "tech": ["Writing", "Tutorials"],
+      "tags": ["Content"],
+      "github": null,
+      "demo": "https://saran-behindfacts.blogspot.com/"
+    }
+  ]
+}

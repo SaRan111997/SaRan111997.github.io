@@ -1,0 +1,39 @@
+{
+  "identity": {
+    "name": "Saravana Kumar B",
+    "shortName": "SaRan",
+    "initials": "SK",
+    "title": "DevSecOps Engineer",
+    "tagline": "Securing pipelines. Shipping at cloud speed.",
+    "intro": "I build resilient cloud platforms where security is a first-class citizen — not an afterthought. Currently exploring LLM-powered automation for DevSecOps workflows.",
+    "location": "Chennai, India",
+    "availability": "Open to senior DevSecOps & Platform Engineering roles",
+    "yearsOfExperience": "4+",
+    "currentCompany": "Positka",
+    "email": "saran1191997@gmail.com",
+    "resumeUrl": "assets/resume.pdf"
+  },
+  "seo": {
+    "siteUrl": "https://saran111997.github.io/",
+    "description": "Saravana Kumar B — DevSecOps Engineer specialising in cloud security, IaC, container orchestration, and LLM-augmented automation.",
+    "keywords": ["DevSecOps", "Cloud Security", "AWS", "Terraform", "Kubernetes", "Python", "LLM", "Saravana Kumar"],
+    "ogImage": "assets/og-image.svg"
+  },
+  "social": [
+    { "label": "GitHub", "icon": "github", "url": "https://github.com/SaRan111997" },
+    { "label": "LinkedIn", "icon": "linkedin", "url": "https://www.linkedin.com/in/saran11" },
+    { "label": "HackTheBox", "icon": "shield", "url": "https://app.hackthebox.eu/profile/383350" },
+    { "label": "Email", "icon": "mail", "url": "mailto:saran1191997@gmail.com" }
+  ],
+  "navigation": [
+    { "label": "About", "href": "#about" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Work", "href": "#experience" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "footer": {
+    "tagline": "Designed & built with intent.",
+    "copyright": "© {year} Saravana Kumar B. All rights reserved."
+  }
+}

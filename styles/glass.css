@@ -1,0 +1,109 @@
+/* ============================================================
+   Glassmorphism System
+   .glass        — base frosted panel
+   .glass-strong — heavier blur + brighter edge
+   .glass-pill   — pill-shaped glass (chips, status)
+   .glass-edge::before — light catching the top edge
+   ============================================================ */
+
+.glass,
+.glass-strong {
+  position: relative;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(160%);
+  backdrop-filter: blur(var(--glass-blur)) saturate(160%);
+  box-shadow: var(--glass-shadow), var(--glass-inset);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.glass-strong {
+  -webkit-backdrop-filter: blur(var(--glass-blur-strong)) saturate(180%);
+  backdrop-filter: blur(var(--glass-blur-strong)) saturate(180%);
+  background: var(--glass-bg-strong);
+  border-color: var(--glass-border-strong);
+}
+
+/* Top edge highlight — simulates light catching the glass rim */
+.glass::before,
+.glass-strong::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    var(--glass-highlight) 0%,
+    transparent 30%,
+    transparent 70%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Subtle inner sheen */
+.glass::after,
+.glass-strong::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    transparent 40%
+  );
+  pointer-events: none;
+  z-index: 0;
+  border-radius: inherit;
+}
+
+[data-theme="light"] .glass::after,
+[data-theme="light"] .glass-strong::after {
+  background: linear-gradient(180deg, rgba(255,255,255,0.5) 0%, transparent 50%);
+}
+
+.glass > *,
+.glass-strong > * { position: relative; z-index: 2; }
+
+.glass-pill {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  backdrop-filter: blur(14px) saturate(160%);
+  box-shadow: var(--glass-inset);
+  border-radius: var(--r-pill);
+}
+
+/* Hover lift for interactive glass */
+.glass-interactive {
+  transition: transform var(--t-base), background var(--t-base),
+              border-color var(--t-base), box-shadow var(--t-base);
+  cursor: default;
+}
+.glass-interactive:hover {
+  transform: translateY(-4px);
+  background: var(--glass-bg-hover);
+  border-color: var(--glass-border-strong);
+  box-shadow: 0 28px 70px -10px rgba(0, 0, 0, 0.5),
+              var(--glass-inset),
+              0 0 0 1px var(--glass-border-strong) inset;
+}
+
+/* Optional grain — adds tactile feel to glass at high zoom */
+.bg-noise {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.035;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.6'/></svg>");
+  mix-blend-mode: overlay;
+}

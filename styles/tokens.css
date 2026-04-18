@@ -1,0 +1,138 @@
+/* ============ Design Tokens ============ */
+
+:root {
+  /* Type */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.375rem;
+  --fs-xl: 1.75rem;
+  --fs-2xl: 2.5rem;
+  --fs-3xl: clamp(2.5rem, 6vw, 4.5rem);
+  --fs-4xl: clamp(3rem, 8vw, 6rem);
+
+  /* Spacing */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-8: 3rem;
+  --sp-10: 4rem;
+  --sp-12: 6rem;
+  --sp-16: 8rem;
+
+  /* Radius */
+  --r-sm: 6px;
+  --r-md: 12px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-pill: 999px;
+
+  /* Motion */
+  --t-fast: 160ms cubic-bezier(0.4, 0, 0.2, 1);
+  --t-base: 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  --t-slow: 520ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout */
+  --container: 1200px;
+  --container-sm: 760px;
+  --nav-h: 72px;
+}
+
+/* ===== Dark theme (default) — Glass ===== */
+[data-theme="dark"] {
+  --bg: #060914;
+  --bg-elev: rgba(20, 26, 44, 0.55);
+
+  /* Glass surfaces */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-bg-hover: rgba(255, 255, 255, 0.085);
+  --glass-bg-strong: rgba(255, 255, 255, 0.09);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-border-strong: rgba(255, 255, 255, 0.22);
+  --glass-highlight: rgba(255, 255, 255, 0.35);
+  --glass-shadow: 0 18px 60px -12px rgba(0, 0, 0, 0.55);
+  --glass-inset: inset 0 1px 0 0 rgba(255, 255, 255, 0.12);
+  --glass-blur: 22px;
+  --glass-blur-strong: 32px;
+
+  /* Legacy aliases (keep components working) */
+  --bg-card: var(--glass-bg);
+  --bg-card-hover: var(--glass-bg-hover);
+  --border: var(--glass-border);
+  --border-strong: var(--glass-border-strong);
+
+  --text: #eef1fa;
+  --text-muted: #b4bccf;
+  --text-soft: #7d8499;
+
+  --accent: #8b6dff;
+  --accent-strong: #b09bff;
+  --accent-2: #34e2f1;
+  --accent-3: #ff7ac6;
+  --accent-glow: rgba(139, 109, 255, 0.5);
+
+  --success: #34d399;
+  --danger: #f87171;
+
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.3);
+  --shadow-md: var(--glass-shadow);
+  --shadow-glow: 0 0 80px var(--accent-glow);
+
+  --gradient-primary: linear-gradient(135deg, #8b6dff 0%, #34e2f1 100%);
+  --gradient-text: linear-gradient(135deg, #b09bff 0%, #34e2f1 50%, #ff7ac6 100%);
+  --gradient-border: linear-gradient(135deg, rgba(139, 109, 255, 0.7), rgba(52, 226, 241, 0.5));
+}
+
+/* ===== Light theme — Glass ===== */
+[data-theme="light"] {
+  --bg: #e8ecf7;
+  --bg-elev: rgba(255, 255, 255, 0.7);
+
+  /* Glass surfaces — slightly tinted (not pure white) for definition */
+  --glass-bg: rgba(255, 255, 255, 0.45);
+  --glass-bg-hover: rgba(255, 255, 255, 0.62);
+  --glass-bg-strong: rgba(255, 255, 255, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.7);
+  --glass-border-strong: rgba(255, 255, 255, 0.95);
+  --glass-highlight: rgba(255, 255, 255, 1);
+  --glass-shadow:
+    0 1px 0 0 rgba(255, 255, 255, 0.6) inset,
+    0 12px 32px -8px rgba(80, 70, 180, 0.18),
+    0 24px 64px -12px rgba(40, 60, 130, 0.15);
+  --glass-inset: inset 0 1px 0 0 rgba(255, 255, 255, 0.95);
+  --glass-blur: 26px;
+  --glass-blur-strong: 36px;
+
+  --bg-card: var(--glass-bg);
+  --bg-card-hover: var(--glass-bg-hover);
+  --border: var(--glass-border);
+  --border-strong: var(--glass-border-strong);
+
+  --text: #1a1f3a;
+  --text-muted: #5a6181;
+  --text-soft: #8087a3;
+
+  --accent: #6d4af7;
+  --accent-strong: #4f2ee0;
+  --accent-2: #06b6d4;
+  --accent-3: #ec4899;
+  --accent-glow: rgba(109, 74, 247, 0.4);
+
+  --success: #059669;
+  --danger: #dc2626;
+
+  --shadow-sm: 0 2px 10px rgba(20, 24, 40, 0.06);
+  --shadow-md: var(--glass-shadow);
+  --shadow-glow: 0 0 80px var(--accent-glow);
+
+  --gradient-primary: linear-gradient(135deg, #6d4af7 0%, #06b6d4 100%);
+  --gradient-text: linear-gradient(135deg, #6d4af7 0%, #06b6d4 50%, #ec4899 100%);
+  --gradient-border: linear-gradient(135deg, rgba(109, 74, 247, 0.7), rgba(6, 182, 212, 0.5));
+}

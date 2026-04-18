@@ -1,0 +1,68 @@
+{
+  "categories": [
+    {
+      "name": "Cloud & Infrastructure",
+      "icon": "cloud",
+      "skills": [
+        { "name": "AWS", "level": 90 },
+        { "name": "Terraform", "level": 85 },
+        { "name": "Ansible", "level": 80 },
+        { "name": "Linux Admin", "level": 90 }
+      ]
+    },
+    {
+      "name": "DevOps & CI/CD",
+      "icon": "rocket",
+      "skills": [
+        { "name": "Docker", "level": 90 },
+        { "name": "Kubernetes", "level": 75 },
+        { "name": "Jenkins", "level": 85 },
+        { "name": "GitHub Actions", "level": 80 }
+      ]
+    },
+    {
+      "name": "Security & Observability",
+      "icon": "shield",
+      "skills": [
+        { "name": "Splunk", "level": 88 },
+        { "name": "SIEM", "level": 85 },
+        { "name": "CrowdStrike", "level": 80 },
+        { "name": "Cloud Security (CCSK)", "level": 80 },
+        { "name": "DevSecOps Pipelines", "level": 85 },
+        { "name": "SAST / DAST", "level": 75 },
+        { "name": "Ethical Hacking", "level": 70 }
+      ]
+    },
+    {
+      "name": "Languages & Scripting",
+      "icon": "code",
+      "skills": [
+        { "name": "Python", "level": 88 },
+        { "name": "Shell / Bash", "level": 90 },
+        { "name": "SQL", "level": 80 },
+        { "name": "Go", "level": 60 }
+      ]
+    },
+    {
+      "name": "AI & LLM Tooling",
+      "icon": "ai",
+      "skills": [
+        { "name": "Claude", "level": 92 },
+        { "name": "Ollama", "level": 85 },
+        { "name": "Codex IDE", "level": 80 },
+        { "name": "Antigravity", "level": 78 },
+        { "name": "GenAI", "level": 85 },
+        { "name": "RAG", "level": 80 },
+        { "name": "AIOps", "level": 78 },
+        { "name": "LLM Orchestration", "level": 80 }
+      ]
+    }
+  ],
+  "tools": [
+    "AWS", "Terraform", "Docker", "Kubernetes", "Jenkins", "Ansible",
+    "Python", "Bash", "Git", "GitHub Actions", "Selenium",
+    "Linux", "Splunk", "CrowdStrike", "SIEM", "ZOHO", "Prometheus",
+    "Claude", "Ollama", "Codex IDE", "Antigravity", "OpenAI", "LangChain",
+    "GenAI", "RAG", "AIOps"
+  ]
+}

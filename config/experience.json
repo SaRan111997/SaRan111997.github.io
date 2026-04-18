@@ -1,0 +1,124 @@
+{
+  "work": [
+    {
+      "role": "DevSecOps Engineer",
+      "company": "Positka",
+      "location": "Chennai, India",
+      "period": "Present",
+      "description": "Designing secure CI/CD pipelines and cloud automation. Exploring LLM-driven workflows to accelerate incident triage and policy-as-code reviews.",
+      "highlights": [
+        "Hands-on with LLM integration for security automation",
+        "IaC governance with Terraform + policy-as-code",
+        "Container security hardening across staging & prod"
+      ],
+      "tech": ["AWS", "Terraform", "Docker", "Python", "LLM"]
+    },
+    {
+      "role": "Cloud / DevOps Engineer",
+      "company": "Previous Engagement",
+      "location": "Chennai, India",
+      "period": "2021 — 2023",
+      "description": "Built and maintained AWS infrastructure, CI/CD automation, and observability stacks for production workloads.",
+      "highlights": [
+        "Reduced deploy time with Jenkins + Ansible automation",
+        "Standardised image baselines across environments",
+        "Owned on-call rotations and incident response"
+      ],
+      "tech": ["AWS", "Jenkins", "Ansible", "Docker", "Linux"]
+    },
+    {
+      "role": "QA / Automation Engineer",
+      "company": "Early Career",
+      "location": "Chennai, India",
+      "period": "2020 — 2021",
+      "description": "Built end-to-end test automation suites and shifted left on quality with shell-driven smoke tests in pipelines.",
+      "highlights": [
+        "Selenium-based regression coverage",
+        "Pipeline-integrated smoke gating",
+        "Test data tooling in Python"
+      ],
+      "tech": ["Selenium", "Python", "Bash", "Git"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Computer Applications (MCA)",
+      "institution": "Guru Nanak College",
+      "period": "2018 — 2020",
+      "score": "70.0%"
+    },
+    {
+      "degree": "B.Sc. Computer Science",
+      "institution": "Guru Nanak College",
+      "period": "2015 — 2018",
+      "score": "71.5%"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Cloud Quest: Solutions Architect",
+      "issuer": "Amazon Web Services",
+      "month": "Mar",
+      "year": 2024,
+      "url": "https://www.credly.com/badges/890f647c-50e1-4859-848f-d951de96327e/",
+      "badgeImage": "assets/icons/aws-solutions-architect.png",
+      "verifyVia": "Credly"
+    },
+    {
+      "name": "AWS Cloud Quest: Serverless Developer",
+      "issuer": "Amazon Web Services",
+      "month": "Mar",
+      "year": 2024,
+      "url": "https://www.credly.com/badges/8fc78a89-5dd2-4528-a9e1-5c2d46a69693/",
+      "badgeImage": "assets/icons/aws-serverless-developer.png",
+      "verifyVia": "Credly"
+    },
+    {
+      "name": "AWS Cloud Quest: Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "month": "Sep",
+      "year": 2023,
+      "url": "https://www.credly.com/badges/16062b2c-78e6-4ab8-8fd5-18199a8e7d35/",
+      "badgeImage": "assets/icons/aws-cloud-practitioner.png",
+      "verifyVia": "Credly"
+    },
+    {
+      "name": "Certificate of Cloud Security Knowledge (CCSK) V4",
+      "issuer": "Udemy",
+      "month": "Nov",
+      "year": 2023,
+      "url": "https://www.udemy.com/certificate/UC-e9b0867f-138b-43dc-9124-e3dbe8b61b26/",
+      "verifyVia": "Udemy"
+    },
+    {
+      "name": "Cloud Computing on AWS for Beginners",
+      "issuer": "Udemy",
+      "year": 2023,
+      "url": "https://www.udemy.com/certificate/UC-bdd0c9eb-f787-4ce8-9025-708d6aab8feb/",
+      "verifyVia": "Udemy"
+    },
+    {
+      "name": "Cyber Security: From Beginner to Expert",
+      "issuer": "Udemy",
+      "year": 2023,
+      "url": "https://www.udemy.com/certificate/UC-6cc823f7-acba-4d85-9c4b-19dcf4105363/",
+      "verifyVia": "Udemy"
+    },
+    {
+      "name": "Python",
+      "issuer": "HackerRank",
+      "month": "Oct",
+      "year": 2023,
+      "url": "https://www.hackerrank.com/certificates/7e4a10c50dff",
+      "verifyVia": "HackerRank"
+    },
+    {
+      "name": "SQL",
+      "issuer": "HackerRank",
+      "month": "Oct",
+      "year": 2023,
+      "url": "https://www.hackerrank.com/certificates/67935434fbe5",
+      "verifyVia": "HackerRank"
+    }
+  ]
+}
