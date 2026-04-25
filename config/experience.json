@@ -56,6 +56,14 @@
   ],
   "certifications": [
     {
+      "name": "AWS Cloud Quest: Networking",
+      "issuer": "Amazon Web Services",
+      "year": 2026,
+      "url": "https://www.credly.com/earner/earned/badge/0cd6df99-d05f-4bcb-a647-4d7666ae930f",
+      "badgeImage": "assets/icons/aws-networking.png",
+      "verifyVia": "Credly"
+    },
+    {
       "name": "AWS Cloud Quest: Solutions Architect",
       "issuer": "Amazon Web Services",
       "month": "Mar",
