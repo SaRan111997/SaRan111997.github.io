@@ -68,7 +68,7 @@ export const commands = {
       ok([
         `Hi, I'm ${accent("Saravana Kumar")} — most call me ${accent("SaRan")}.`,
         `I build secure cloud platforms and LLM-powered DevSecOps automation.`,
-        `Currently @ ${accent("Positka")}, Chennai · 4+ years experience.`,
+        `Currently @ ${accent("Positka")}, Chennai · 5+ years experience.`,
       ]),
   },
   skills: {
