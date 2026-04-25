@@ -8,9 +8,8 @@
     "intro": "I build resilient cloud platforms where security is a first-class citizen — not an afterthought. Currently exploring LLM-powered automation for DevSecOps workflows.",
     "location": "Chennai, India",
     "availability": "Open to senior DevSecOps & Platform Engineering roles",
-    "yearsOfExperience": "4+",
+    "yearsOfExperience": "5+",
     "currentCompany": "Positka",
-    "email": "saran1191997@gmail.com",
     "resumeUrl": "assets/resume.pdf"
   },
   "seo": {
@@ -21,9 +20,7 @@
   },
   "social": [
     { "label": "GitHub", "icon": "github", "url": "https://github.com/SaRan111997" },
-    { "label": "LinkedIn", "icon": "linkedin", "url": "https://www.linkedin.com/in/saran11" },
-    { "label": "HackTheBox", "icon": "shield", "url": "https://app.hackthebox.eu/profile/383350" },
-    { "label": "Email", "icon": "mail", "url": "mailto:saran1191997@gmail.com" }
+    { "label": "LinkedIn", "icon": "linkedin", "url": "https://www.linkedin.com/in/saran11" }
   ],
   "navigation": [
     { "label": "About", "href": "#about" },

@@ -47,7 +47,7 @@ const FS = {
     null,
     2
   ),
-  "contact.txt": "Email:    saran1191997@gmail.com\nLinkedIn: linkedin.com/in/saran11\nGitHub:   github.com/SaRan111997",
+  "contact.txt": "Form:     #contact (lands in my inbox)\nLinkedIn: linkedin.com/in/saran11\nGitHub:   github.com/SaRan111997",
   "resume.pdf": "[binary file]",
   ".secret": "🤫 You found it. Type `hire` to see what I'm looking for.",
 };
@@ -97,7 +97,7 @@ export const commands = {
     desc: "How to reach me",
     run: () =>
       ok([
-        `📧 ${link("saran1191997@gmail.com", "mailto:saran1191997@gmail.com")}`,
+        `📝 ${link("Send a message via the form", "#contact")}`,
         `💼 ${link("linkedin.com/in/saran11", "https://www.linkedin.com/in/saran11")}`,
         `🐙 ${link("github.com/SaRan111997", "https://github.com/SaRan111997")}`,
       ]),
@@ -118,7 +118,6 @@ export const commands = {
       ok([
         `GitHub      ${link("github.com/SaRan111997", "https://github.com/SaRan111997")}`,
         `LinkedIn    ${link("linkedin.com/in/saran11", "https://www.linkedin.com/in/saran11")}`,
-        `HackTheBox  ${link("app.hackthebox.eu/profile/383350", "https://app.hackthebox.eu/profile/383350")}`,
       ]),
   },
   github: {

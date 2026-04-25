@@ -26,12 +26,12 @@
     "supported": ["en"]
   },
   "email": {
-    "provider": "formspree",
-    "endpoint": "https://formspree.io/f/REPLACE_WITH_YOUR_ID",
-    "fallbackMailto": "saran1191997@gmail.com",
+    "provider": "web3forms",
+    "endpoint": "a2308015-eac7-4dd5-ab98-8c25b9b5ae64",
     "honeypotField": "website",
+    "subject": "New portfolio contact — {name}",
     "successMessage": "Thanks — I'll get back to you within 24 hours.",
-    "errorMessage": "Something went wrong. Please try again or email me directly."
+    "errorMessage": "Something went wrong. Please try again or reach out on LinkedIn."
   },
   "analytics": {
     "enabled": false,

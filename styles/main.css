@@ -4,13 +4,13 @@
    Architecture: Token-driven, dark/light theming via [data-theme]
    ============================================================ */
 
-@import url("./tokens.css");
-@import url("./glass.css");
-@import url("./layout.css");
-@import url("./components.css");
-@import url("./terminal.css");
-@import url("./animations.css");
-@import url("./responsive.css");
+@import url("./tokens.css?v=6");
+@import url("./glass.css?v=6");
+@import url("./layout.css?v=6");
+@import url("./components.css?v=6");
+@import url("./terminal.css?v=6");
+@import url("./animations.css?v=6");
+@import url("./responsive.css?v=6");
 
 /* -------- Reset -------- */
 *,

@@ -34,12 +34,34 @@ const providers = {
     return { ok: res.ok };
   },
 
-  // Pure mailto fallback (no backend)
-  mailto: async (payload, config) => {
-    const subject = encodeURIComponent(`Portfolio contact — ${payload.name}`);
-    const body = encodeURIComponent(`${payload.message}\n\nFrom: ${payload.name} <${payload.email}>`);
-    window.location.href = `mailto:${config.fallbackMailto}?subject=${subject}&body=${body}`;
-    return { ok: true };
+  // Web3Forms — paste an access_key UUID into config.endpoint
+  // Sign up at web3forms.com → gives back a UUID that points to your email
+  web3forms: async (payload, config) => {
+    if (!config.endpoint || config.endpoint.includes("PASTE_") || config.endpoint.includes("REPLACE_WITH")) {
+      return { ok: false, error: "Email endpoint not configured." };
+    }
+    try {
+      const subject = (config.subject || "Portfolio contact — {name}").replace("{name}", payload.name);
+      const body = {
+        access_key: config.endpoint,
+        subject,
+        from_name: `${payload.name} (portfolio)`,
+        replyto: payload.email,
+        name: payload.name,
+        email: payload.email,
+        message: payload.message,
+        botcheck: false,
+      };
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(body),
+      });
+      const data = await res.json().catch(() => ({}));
+      return res.ok && data.success ? { ok: true } : { ok: false, error: data?.message || `HTTP ${res.status}` };
+    } catch (e) {
+      return { ok: false, error: e.message };
+    }
   },
 };
 

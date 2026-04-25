@@ -5,13 +5,13 @@ import { toast } from "../utils/toast.js";
 
 export function renderContact(site, features) {
   const channels = site.social
-    .filter((s) => ["linkedin", "github", "mail"].includes(s.icon))
+    .filter((s) => ["linkedin", "github"].includes(s.icon))
     .map(
       (s) => `
         <a href="${s.url}" target="_blank" rel="noopener" class="contact-channel">
           <span class="contact-channel-icon">${icon(s.icon)}</span>
           <span><strong>${s.label}</strong><br>
-            <span style="color: var(--text-muted); font-size: var(--fs-xs);">${s.url.replace("mailto:", "")}</span>
+            <span style="color: var(--text-muted); font-size: var(--fs-xs);">${s.url.replace(/^https?:\/\//, "")}</span>
           </span>
         </a>
       `
@@ -32,8 +32,8 @@ export function renderContact(site, features) {
 
         <div class="contact-grid">
           <div class="contact-side reveal reveal-delay-1">
-            <h3>Reach out directly</h3>
-            <p>I usually reply within 24 hours. The fastest way is email or LinkedIn.</p>
+            <h3>Drop a message</h3>
+            <p>Send a note via the form — it lands straight in my inbox and I usually reply within 24 hours. Prefer to chat on LinkedIn or peek at my code? Links below.</p>
             <div class="contact-channels">${raw(channels)}</div>
           </div>
 
