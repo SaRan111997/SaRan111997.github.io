@@ -58,8 +58,9 @@
     {
       "name": "AWS Cloud Quest: Networking",
       "issuer": "Amazon Web Services",
+      "month": "Apr",
       "year": 2026,
-      "url": "https://www.credly.com/earner/earned/badge/0cd6df99-d05f-4bcb-a647-4d7666ae930f",
+      "url": "https://www.credly.com/badges/0cd6df99-d05f-4bcb-a647-4d7666ae930f/public_url",
       "badgeImage": "assets/icons/aws-networking.png",
       "verifyVia": "Credly"
     },
