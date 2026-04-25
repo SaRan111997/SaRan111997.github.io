@@ -774,7 +774,7 @@
   flex-wrap: wrap;
   gap: var(--sp-2);
 }
-.timeline-tech span {
+.timeline-tech > span {
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -1058,7 +1058,7 @@
   gap: 6px;
   margin-top: auto;
 }
-.project-tech span {
+.project-tech > span {
   display: inline-flex;
   align-items: center;
   gap: 7px;

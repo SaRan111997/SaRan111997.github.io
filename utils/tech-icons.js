@@ -41,6 +41,24 @@ const BRAND_COLORS = {
   git: "#F05032",
   github: { dark: "#FFFFFF", light: "#181717" },
   bitbucket: "#0052CC",
+  jira: "#0052CC",
+
+  // Web frameworks / app stacks
+  django: "#0C4B33",
+  qt: "#41CD52",
+  dotnet: "#512BD4",
+  nginx: "#009639",
+  apache: "#D22128",
+
+  // Databases
+  microsoftsqlserver: "#CC2927",
+  mongodb: "#47A248",
+  postgresql: "#4169E1",
+  mariadb: "#003545",
+  amazondynamodb: "#4053D6",
+
+  // Productivity
+  microsoftexcel: "#217346",
 
   // Languages
   python: "#3776AB",
@@ -141,6 +159,35 @@ const SLUGS = {
   "git": "git",
   "github": "github",
   "bitbucket": "bitbucket",
+  "jira": "jira",
+
+  // App stacks / frameworks
+  "django": "django",
+  "qt": "qt",
+  "pyqt": "qt",
+  ".net": "dotnet",
+  "dotnet": "dotnet",
+  ".net core": "dotnet",
+  "nginx": "nginx",
+  "apache": "apache",
+
+  // Databases
+  "mssql": "microsoftsqlserver",
+  "ms sql": "microsoftsqlserver",
+  "microsoft sql server": "microsoftsqlserver",
+  "sql server": "microsoftsqlserver",
+  "mongodb": "mongodb",
+  "mongo": "mongodb",
+  "postgresql": "postgresql",
+  "postgres": "postgresql",
+  "mariadb": "mariadb",
+  "dynamodb": "amazondynamodb",
+  "aws dynamodb": "amazondynamodb",
+
+  // Productivity
+  "excel": "microsoftexcel",
+  "ms excel": "microsoftexcel",
+  "microsoft excel": "microsoftexcel",
 
   // Languages
   "python": "python",
@@ -258,6 +305,18 @@ const CUSTOM_BRANDS = {
     color: "#F59E0B",
     svg: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2" fill="currentColor"/><path d="M12 12l8-4"/></svg>`,
   },
+  mitre: {
+    color: "#BE3A34",
+    svg: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M8 11h8"/><path d="M8 15h8"/><circle cx="12" cy="8" r="1.4" fill="currentColor"/></svg>`,
+  },
+  soar: {
+    color: "#22D3EE",
+    svg: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18l4-2 3 2 4-3 3 2 4-3"/><path d="M3 13l4-2 3 2 4-3 3 2 4-3"/><circle cx="7" cy="16" r="1.5" fill="currentColor"/><circle cx="14" cy="15" r="1.5" fill="currentColor"/><circle cx="21" cy="11" r="1.5" fill="currentColor"/></svg>`,
+  },
+  nopcommerce: {
+    color: "#4B97D2",
+    svg: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.6" fill="currentColor"/><circle cx="18" cy="20" r="1.6" fill="currentColor"/><path d="M3 4h2l3 12h12l2-8H7"/></svg>`,
+  },
 };
 
 /* --- Concept icons (no brand) → inline SVG --- */
@@ -319,7 +378,10 @@ export function techIcon(name, { size = 18, className = "" } = {}) {
                  (lc === "aiops" || lc === "ai ops" ? CUSTOM_BRANDS.aiops : null) ||
                  (lc === "rag" ? CUSTOM_BRANDS.rag : null) ||
                  (lc === "genai" || lc === "generative ai" ? CUSTOM_BRANDS.genai : null) ||
-                 (lc === "siem" ? CUSTOM_BRANDS.siem : null);
+                 (lc === "siem" ? CUSTOM_BRANDS.siem : null) ||
+                 (/^mitre/i.test(lc) ? CUSTOM_BRANDS.mitre : null) ||
+                 (lc === "soar" ? CUSTOM_BRANDS.soar : null) ||
+                 (lc.includes("nopcommerce") ? CUSTOM_BRANDS.nopcommerce : null);
   if (custom) {
     if (custom.type === "image") {
       const cls = `tech-icon tech-icon-img ${custom.rounded ? "is-rounded" : ""} ${className}`.trim();

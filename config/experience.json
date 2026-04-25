@@ -4,40 +4,45 @@
       "role": "DevSecOps Engineer",
       "company": "Positka",
       "location": "Chennai, India",
-      "period": "Present",
-      "description": "Designing secure CI/CD pipelines and cloud automation. Exploring LLM-driven workflows to accelerate incident triage and policy-as-code reviews.",
+      "period": "2023 — Present",
+      "description": "Leading SOC automation — SOAR playbooks, API-driven auto-triage, and Python tooling that turns minutes of analyst toil into seconds.",
       "highlights": [
-        "Hands-on with LLM integration for security automation",
-        "IaC governance with Terraform + policy-as-code",
-        "Container security hardening across staging & prod"
+        "Automated CrowdStrike Falcon detections + Fusion SOAR for end-to-end incident response",
+        "Integrated Splunk APIs and SOAR for streamlined cross-tool threat triage",
+        "Built API-driven auto-triage and auto-investigation mapped to MITRE ATT&CK",
+        "Custom Django REST APIs + two-way CrowdStrike ↔ Jira ITSM case sync",
+        "Python, Selenium and PyQt tooling shipped directly to SOC analysts"
       ],
-      "tech": ["AWS", "Terraform", "Docker", "Python", "LLM"]
+      "tech": ["CrowdStrike", "Splunk", "MITRE ATT&CK", "SOAR", "Python", "Django", "Jira", "Selenium", "Qt"]
     },
     {
-      "role": "Cloud / DevOps Engineer",
+      "role": "DevOps Engineer",
       "company": "Previous Engagement",
       "location": "Chennai, India",
       "period": "2021 — 2023",
-      "description": "Built and maintained AWS infrastructure, CI/CD automation, and observability stacks for production workloads.",
+      "description": "Owned AWS infrastructure, CI/CD automation, and server reliability for production .NET workloads.",
       "highlights": [
-        "Reduced deploy time with Jenkins + Ansible automation",
-        "Standardised image baselines across environments",
-        "Owned on-call rotations and incident response"
+        "Designed secure, scalable AWS infra: EC2, S3, VPC, Route 53, RDS, IAM",
+        "Python + Qt S3 backup tool for automated, reliable database snapshots",
+        "Jenkins CI/CD for .NET apps + silent POS installer rollouts in Python",
+        "Admin'd Apache, Nginx, IIS — MySQL, PostgreSQL, MSSQL, MongoDB, DynamoDB",
+        "Cost-optimised provisioning, IAM hardening, Git-based code reviews"
       ],
-      "tech": ["AWS", "Jenkins", "Ansible", "Docker", "Linux"]
+      "tech": ["AWS", "Jenkins", "Python", "Qt", ".NET", "Linux", "Nginx", "MSSQL", "MongoDB", "Git"]
     },
     {
-      "role": "QA / Automation Engineer",
+      "role": "Full Stack Developer",
       "company": "Early Career",
       "location": "Chennai, India",
       "period": "2020 — 2021",
-      "description": "Built end-to-end test automation suites and shifted left on quality with shell-driven smoke tests in pipelines.",
+      "description": "Built and operated cloud-hosted .NET commerce apps on Azure with Python-driven reporting and reliability automation.",
       "highlights": [
-        "Selenium-based regression coverage",
-        "Pipeline-integrated smoke gating",
-        "Test data tooling in Python"
+        "Azure admin for high-availability NopCommerce deployments",
+        "MSSQL DB management with focus on integrity and access security",
+        "Python automation for POS billing reports and Excel ops tasks",
+        "Deployed and monitored automation workflows in Azure"
       ],
-      "tech": ["Selenium", "Python", "Bash", "Git"]
+      "tech": ["Azure", "NopCommerce", ".NET", "MSSQL", "Python", "Excel"]
     }
   ],
   "education": [
