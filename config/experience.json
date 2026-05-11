@@ -61,6 +61,24 @@
   ],
   "certifications": [
     {
+      "name": "AWS Cloud Quest: Security",
+      "issuer": "Amazon Web Services",
+      "month": "May",
+      "year": 2026,
+      "url": "https://www.credly.com/badges/f8175943-adb4-4260-a268-753993397cd2/public_url",
+      "badgeImage": "assets/icons/aws-security.png",
+      "verifyVia": "Credly"
+    },
+    {
+      "name": "AWS Cloud Quest: Generative AI Practitioner",
+      "issuer": "Amazon Web Services",
+      "month": "May",
+      "year": 2026,
+      "url": "https://www.credly.com/badges/6955162d-8564-4742-8a14-dbfb4b62b613/public_url",
+      "badgeImage": "assets/icons/aws-generative-ai-practitioner.png",
+      "verifyVia": "Credly"
+    },
+    {
       "name": "AWS Cloud Quest: Networking",
       "issuer": "Amazon Web Services",
       "month": "Apr",
